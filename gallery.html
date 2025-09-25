@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — GreenScape Adventures</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">GreenScape Adventures</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle-4">Light</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Gallery</h1>
+    <div class="gallery-controls">
+      <label>Filter
+        <select id="gallery-filter">
+          <option value="all">All</option>
+          <option value="hike">Hiking</option>
+          <option value="birds">Birds</option>
+          <option value="lodges">Lodges</option>
+        </select>
+      </label>
+      <input id="gallery-search" type="search" placeholder="Search captions" />
+    </div>
+
+    <div id="gallery-grid" class="masonry">
+      <!-- JS generates gallery tiles -->
+    </div>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container"><small>© GreenScape Adventures</small></div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
