@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GreenScape Adventures — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">GreenScape Adventures</a>
+      <nav id="main-nav" class="nav">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="booking.html" class="cta">Book Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-pressed="false">Light</button>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Explore Nature Responsibly</h1>
+          <p class="lead">Local eco-tourism experiences — hiking, birdwatching, camping and eco-lodges. Modern, accessible and mobile-friendly.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="tours.html">View Tours</a>
+            <a class="btn ghost" href="booking.html">Quick Book</a>
+          </div>
+        </div>
+        <figure class="hero-image" aria-hidden="true"></figure>
+      </div>
+    </section>
+
+    <section class="container features">
+      <h2>Why Choose GreenScape</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Conservation-first</h3>
+          <p>Partnerships with local conservancies to ensure every tour gives back to nature and community.</p>
+        </article>
+        <article class="card">
+          <h3>Expert Guides</h3>
+          <p>Trained guides with safety certifications and deep local knowledge.</p>
+        </article>
+        <article class="card">
+          <h3>Flexible Booking</h3>
+          <p>Online booking with instant confirmation, group discounts and owner-supplied vehicles options.</p>
+        </article>
+        <article class="card">
+          <h3>Sustainable Lodging</h3>
+          <p>Partner eco-lodges, solar-powered camps and locally sourced meals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container tours-preview">
+      <h2>Featured Tours</h2>
+      <div class="tour-grid" id="tour-list">
+        <article class="tour">
+          <img src="https://via.placeholder.com/640x360?text=Hike+Trail" alt="Hiking trail" />
+          <h3>Mount Ridge Hike</h3>
+          <p>Half-day hike with panoramic views. Difficulty: Moderate. Price: KES 2,500.</p>
+          <div class="tour-meta">
+            <span>Duration: 4 hours</span>
+            <span>Group: up to 12</span>
+          </div>
+          <a class="btn" href="booking.html?tour=mount-ridge">Book</a>
+        </article>
+        <article class="tour">
+          <img src="https://via.placeholder.com/640x360?text=Birdwatching" alt="Birdwatching" />
+          <h3>Birdwatch & Breakfast</h3>
+          <p>Early morning guided birdwatching and local breakfast. Price: KES 1,800.</p>
+          <div class="tour-meta">
+            <span>Duration: 3 hours</span>
+            <span>Group: up to 10</span>
+          </div>
+          <a class="btn" href="booking.html?tour=birdwatch">Book</a>
+        </article>
+        <article class="tour">
+          <img src="https://via.placeholder.com/640x360?text=Eco-Lodge" alt="Eco-Lodge" />
+          <h3>Weekend Eco-lodge Retreat</h3>
+          <p>Two nights at a solar-powered lodge, guided walks, and workshops. Price: KES 12,500.</p>
+          <div class="tour-meta">
+            <span>Duration: 2 nights</span>
+            <span>Group: up to 6</span>
+          </div>
+          <a class="btn" href="booking.html?tour=eco-retreat">Book</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container testimonials">
+      <h2>Guest Reviews</h2>
+      <div id="testimonials" class="testimonial-slider" aria-live="polite">
+        <blockquote class="testimonial">
+          <p>Exceptional guides, pristine routes and a real commitment to community. Will return.</p>
+          <footer>— A. Kamau</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>Booking was smooth and our lodge used solar power — a great eco experience.</p>
+          <footer>— S. Wanjiru</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="container newsletter">
+      <h2>Stay Informed</h2>
+      <form id="newsletter-form" class="form-inline" aria-label="Subscribe to newsletter">
+        <input id="newsletter-email" type="email" placeholder="Your email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="fineprint">We only send conservation updates and special offers. Unsubscribe anytime.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>GreenScape Adventures</strong>
+        <p>Responsible eco-tours across our region. Phone: +254 700 000000</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year"></span> GreenScape Adventures. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+  </html>
