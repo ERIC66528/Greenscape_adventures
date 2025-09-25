@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking — GreenScape Adventures</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">GreenScape Adventures</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle-3">Light</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container booking-page">
+    <h1>Book a Tour</h1>
+    <div class="booking-grid">
+      <form id="booking-form" class="booking-form" aria-label="Booking form">
+        <fieldset>
+          <legend>Tour Selection</legend>
+          <label>Choose tour
+            <select id="booking-tour" required>
+              <option value="">Select a tour</option>
+            </select>
+          </label>
+          <label>Preferred date
+            <input id="booking-date" type="date" required />
+          </label>
+          <label>Number of participants
+            <input id="booking-count" type="number" min="1" max="30" value="2" required />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Guest Details</legend>
+          <label>Full name
+            <input id="guest-name" type="text" required />
+          </label>
+          <label>Contact phone
+            <input id="guest-phone" type="tel" pattern="[0-9+ ]{7,15}" required />
+          </label>
+          <label>Email address
+            <input id="guest-email" type="email" required />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Payment & Confirmation</legend>
+          <label>Payment method
+            <select id="payment-method">
+              <option value="mpesa">M-Pesa</option>
+              <option value="card">Card (demo)</option>
+              <option value="bank">Bank Transfer</option>
+            </select>
+          </label>
+          <label>
+            Add notes
+            <textarea id="booking-notes" rows="3"></textarea>
+          </label>
+        </fieldset>
+        <div class="form-actions">
+          <button class="btn" type="submit">Confirm Booking</button>
+          <button class="btn ghost" type="button" id="save-draft">Save Draft</button>
+        </div>
+        <div id="booking-result" role="status" class="result"></div>
+      </form>
+
+      <aside class="booking-summary" aria-live="polite">
+        <h2>Summary</h2>
+        <div id="summary-content">
+          <p>Select a tour and date to see summary and cost breakdown.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container"><small>© GreenScape Adventures</small></div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+              </html>
